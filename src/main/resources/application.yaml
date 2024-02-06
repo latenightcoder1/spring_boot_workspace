@@ -1,0 +1,16 @@
+server:
+  servlet:
+    context-path: /abc
+management:
+  endpoints:
+    web:
+      base-path: /management
+      exposure:
+        include:
+          - metrics
+          - health
+  endpoint:
+    metrics:
+      enabled: true
+    health:
+      enabled: true
